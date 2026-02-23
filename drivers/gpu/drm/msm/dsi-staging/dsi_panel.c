@@ -4461,7 +4461,7 @@ int dsi_panel_apply_hbm_mode(struct dsi_panel *panel)
 	else
 		type = type_map[0];
 
-	backlight_hbm_set(panel->hbm_mode);
+	//backlight_hbm_set(panel->hbm_mode);
 
 	mutex_lock(&panel->panel_lock);
 	rc = dsi_panel_tx_cmd_set(panel, type);
